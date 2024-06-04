@@ -4,6 +4,8 @@
   "description": "A practice app for fullstack review",
   "main": "index.js",
   "scripts": {
+    "server-dev": "npx nodemon --watch server server/index.js",
+    "client-dev": "npx webpack --watch",
     "test": "jest",
     "client": "webpack",
     "server": "node server/index.js"
@@ -24,8 +26,13 @@
   },
   "homepage": "https://github.com/unoriginal1234/album-review#readme",
   "dependencies": {
+    "axios": "^1.7.2",
+    "bluebird": "^3.7.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "mongoose": "^8.4.1",
+    "mysql2": "^3.10.0",
+    "nodemon": "^3.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
